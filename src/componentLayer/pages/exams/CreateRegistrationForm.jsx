@@ -23,7 +23,7 @@ const fieldTypes = {
 const selectOptions = {
     "Gender": ["Select", "Male", "Female", "Other"],
     "Working Professional": ["Select", "Yes", "No"],
-    "Are you a Teksversity Student?": ["Select", "Yes", "No"],
+    "Are you a InfozIT Student?": ["Select", "Yes", "No"],
     "Highest Qualification": ["Select", "High School", "Bachelor's", "Master's", "PhD"], // Added based on API data
 };
 

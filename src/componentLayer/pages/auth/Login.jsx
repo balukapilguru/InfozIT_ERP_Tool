@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import kapilvidyalogowhite from "../../../assets/images/TeksversityLogo.webp"
+import InfozitLogo from "../../../assets/images/infozitLogo.webp"
 import "../../../assets/css/Login.css";
 import { AuthContext } from "../../../dataLayer/context/authContext/AuthContextProvider";
 import { Link, useNavigate } from "react-router-dom";
@@ -66,7 +66,7 @@ const Login = () => {
 
   return (
     <div>
-      <div className="login_bg_image w-full vh-100">
+      <div className="login_bg_image w-full vh-100 d-flex align-items-center justify-content-center">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -81,7 +81,7 @@ const Login = () => {
                 <div className="p-4 card-body">
                   <div className="text-center">
                       <div>
-                    <img src={kapilvidyalogowhite} alt="Login page logo"  width="100"/>
+                    <img src={InfozitLogo} alt="Login page logo"  width="100"/>
                 </div>
                     {/* <p className="text-mute login_welcome_description">
                       Sign in to continue to TeksAcademy.

@@ -6,14 +6,13 @@ import { LuLayoutDashboard } from "react-icons/lu";
 import { FaRegUserCircle } from "react-icons/fa";
 import { AiOutlineLine } from "react-icons/ai";
 import { PiStudentFill } from "react-icons/pi";
-import kapilvidyasmalllogo from "../../../assets/images/TeksversityLogoMini.png"
+import infozitmini from "../../../assets/images/infozitLogoMini.png"
 import GateKeeper from "../../../rbac/GateKeeper";
 import { MdOutlineManageAccounts } from "react-icons/md";
 import { useAuthContext } from "../../../dataLayer/hooks/useAuthContext";
 import { usePermissionsProvider } from "../../../dataLayer/hooks/usePermissionsProvider";
 import { FaRegCircleQuestion } from "react-icons/fa6";
-// import kapilVidya from "../../../assets/images/kapilvidyalogowhite.png"
-import TeksversityLogo from "../../../assets/images/TeksversityWhiteLogo.webp"
+import infozitwhiteimage from "../../../assets/images/infozitwhiteLogo.webp"
 import { TbMessageReport } from "react-icons/tb";
 
 const Sidemenu = ({ isExpanded }) => {
@@ -48,7 +47,7 @@ const Sidemenu = ({ isExpanded }) => {
               <div className="text-center pt-2">
                 <Link to={"/"}>
                   <img
-                    src={isExpanded ? TeksversityLogo : kapilvidyasmalllogo}
+                    src={isExpanded ? infozitwhiteimage : infozitmini}
                     className={
                       isExpanded
                         ? "img-fluid logo_css"
@@ -56,7 +55,7 @@ const Sidemenu = ({ isExpanded }) => {
                     }
                     alt="Comapny Logo"
                     onError={(e) => {
-                      e.target.src = isExpanded ? TeksversityLogo : kapilvidyasmalllogo;
+                      e.target.src = isExpanded ? infozitwhiteimage : infozitmini;
                     }}
                   />
                 </Link>

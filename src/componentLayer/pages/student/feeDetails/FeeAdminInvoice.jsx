@@ -8,7 +8,7 @@ import { ERPApi } from "../../../../serviceLayer/interceptor.jsx";
 import BackButton from "../../../components/backbutton/BackButton.jsx";
 import { useAuthContext } from "../../../../dataLayer/hooks/useAuthContext.jsx";
 import mainLogo from  "../../../../assets/images/mainlogo/logoteksnew.png"
-import kapilvidyalogo from "../../../../assets/images/TeksversityLogo.webp"
+import Infozitwhiteimg from "../../../../assets/images/InfozitwhiteLogo.webp"
 
 export const FeeAdminInvoiceLoader = async ({ request, params }) => {
 
@@ -65,7 +65,7 @@ const FeeAdminInvoice = () => {
         <div className="invoice" ref={componentRefff}>
           <div className="invoice-border black_300 border-black d-flex justify-content-center">
             <img
-              src={kapilvidyalogo}
+              src={Infozitwhiteimg}
               className="img-fluid logoinvoice_css"
               alt="Branch Logo"
             />
@@ -130,7 +130,7 @@ const FeeAdminInvoice = () => {
               </span>{" "}
               <br />
               <span className="ps-2   fs-14  black_300">
-                <b>Branch : </b> Teksversity-{studentData && studentData?.branch}
+                <b>Branch : </b>InfozIT-{studentData && studentData?.branch}
               </span>
             </div>
 

@@ -2,8 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { AuthContext } from "../../../dataLayer/context/authContext/AuthContextProvider";
 import Teks_Logo from "../../../assets/images/Teks_Logo.svg";
-// import kapilvidyalogowhite from "../../../assets/images/kapilvidyalogowhite.png";
-import kapilvidyalogowhite from "../../../assets/images/TeksversityLogo.webp";
+import infozitlogoimg from "../../../assets/images/InfozitLogo.webp";
 
 import "../../../assets/css/Login.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -19,7 +18,7 @@ const ChangePassword = () => {
   //     ? `https://teksversity.s3.us-east-1.amazonaws.com/branches/logos/${ branchLogoImage?.branch_setting?.logoName}`
   //     : null;
 
-  const navigate1 =useNavigate();
+  const navigate1 = useNavigate();
 
 
   const toggleShowPassword = () => {
@@ -140,30 +139,28 @@ const ChangePassword = () => {
       const oldPassword = values?.oldpassword
       const email = AuthState?.user?.email;
       const updatedpassword = { newPassword, oldPassword, email };
-      ChangePasswordfun(updatedpassword,navigate1);
+      ChangePasswordfun(updatedpassword, navigate1);
     }
   };
 
   return (
     <div>
-      <div className="login_bg_image vh-100">
+      <div className="login_bg_image vh-100 d-flex align-items-center justify-content-center">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-12 mt-3">
-              <div className="text-center mt-sm-5 mb-1 text-white-50 ">
-                <div>
-                  <a className="d-inline-block auth-logo">
-                    <img src={kapilvidyalogowhite} alt="Login page logo" height="40" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="justify-content-center row mt-1">
+          <div className="justify-content-center row mt-4">
             <div className="col-md-8 col-lg-6 col-xl-5">
               <div className=" card">
                 <div className="p-4 card-body">
-                  <div className="text-center">
+                  <div className="col-lg-12">
+                    <div className="text-center mb-1 text-white-50 ">
+                      <div>
+                        <a className="d-inline-block auth-logo">
+                          <img src={infozitlogoimg} alt="Login page logo" height="40" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-center mt-4">
                     <h5 className="login_welcome_text">Create new password!</h5>
                     <p className=" login_welcome_description">
                       Your new password must be different from previous used

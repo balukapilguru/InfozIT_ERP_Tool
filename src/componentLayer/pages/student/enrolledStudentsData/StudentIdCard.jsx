@@ -8,11 +8,11 @@ import Button from "../../../components/button/Button";
 import BackButton from "../../../components/backbutton/BackButton";
 import { ERPApi } from "../../../../serviceLayer/interceptor";
 import html2canvas from "html2canvas"; // To generate canvas for ID card
-import logo from "../../../../assets/images/TeksversityLogoMini.png";
+import logo from "../../../../assets/images/infozitLogoMini.png";
 import Defaultimg from "../../../../assets/images/student_idCard_images/DefaultimgBG.png";
 import { useLoaderData } from "react-router-dom";
 import { useAuthContext } from "../../../../dataLayer/hooks/useAuthContext";
-import TeksversityLogo from "../../../../assets/images/TeksversityLogo.webp"
+import Infozitwhiteimg from "../../../../assets/images/infozitLogo.webp"
 
 
 export const studentIdCardLoader = async ({ params }) => {
@@ -111,7 +111,7 @@ const StudentIdCard = () => {
         <div className="studentid">
           <div className="idcard1" ref={componentRefff}>
             <div className="teksimg mt-3">
-              <img className="mb- 4 w-50" src={TeksversityLogo ? TeksversityLogo : logo} alt="Logo" />
+              <img className="mb- 4 w-50" src={Infozitwhiteimg ? Infozitwhiteimg : logo} alt="Logo" />
             </div>
             <div className="card_Content">
               <div className="studid-photo text-center">

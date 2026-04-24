@@ -178,7 +178,7 @@ function OrganizationProfile() {
                                         Organization&nbsp;Name
                                       </th>
                                       <td className="fs-13 black_300   organization-table-border ">
-                                         Teksversity
+                                         InfozIT
                                       </td>
                                     </tr>
 
@@ -598,7 +598,7 @@ function OrganizationProfile() {
                                     {/* 1st row */}
                                     <tr>
                                       <td className="fs-13 black_300 fw-500 lh-xs bg_light ">
-                                        Teksversity
+                                        InfozIT
                                       </td>
                                       <td className="fs-13 black_300  lh-xs bg_light">
                                         21-03-2021
@@ -703,7 +703,7 @@ function OrganizationProfile() {
                                     {/* 1st row */}
                                     <tr>
                                       <td className="fs-13 black_300 fw-500 lh-xs bg_light ">
-                                        Teksversity
+                                        InfozIT
                                       </td>
                                       <td className="fs-13 black_300  lh-xs bg_light">
                                         21-03-2021
@@ -814,7 +814,7 @@ function OrganizationProfile() {
                                     {/* 1st row */}
                                     <tr>
                                       <td className="fs-13 black_300 fw-500 lh-xs bg_light ">
-                                        Teksversity
+                                        InfozIT
                                       </td>
                                       <td className="fs-13 black_300  lh-xs bg_light">
                                         21-03-2021

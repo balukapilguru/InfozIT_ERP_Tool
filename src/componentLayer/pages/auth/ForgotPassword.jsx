@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import kapilvidyalogowhite from "../../../assets/images/TeksversityLogo.webp"
+import InfozitLogo from "../../../assets/images/InfozitLogo.webp"
 import "../../../assets/css/Login.css";
 import { AuthContext } from "../../../dataLayer/context/authContext/AuthContextProvider";
 import gif from "../../../assets/images/GIF_01.gif";
@@ -66,7 +66,7 @@ const ForgotPassword = () => {
                   <div className="text-center mt-2">
                      <div>                
                     <img
-                      src={kapilvidyalogowhite}
+                      src={InfozitLogo}
                       alt="Login page logo"
                      width="100"
                     />
