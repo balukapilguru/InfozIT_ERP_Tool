@@ -1,0 +1,70 @@
+.caption {
+    background-color: var(--erp-sidebar-color)!important;
+    color: var(--erp-white-color);
+}
+
+.application-tbl-td {
+    border: 1px solid var(--erp-text-color) !important;
+}
+
+.bg-head {
+    background: var(--erp-applicationprint-header-color) !important;
+
+
+}
+
+.w-35 {
+    width: 35% !important;
+}
+
+.admform-sd {
+    border: 3px solid var(--erp-gray-400);
+    border-radius: 5px;
+    height: 180px;
+
+}
+
+@media print {
+     body {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    margin: 0;
+    padding: 0;
+  }
+    .student-data{
+        margin-top: 5px;
+    }
+    .application{
+        margin-top: 20px;
+    }
+    .terms-and-condition , .next-page{
+        page-break-before: always;
+    }
+    .page-break{
+        margin-top: 200px;
+    }
+    .fee_detail{
+
+    }
+    .admission_detail{
+        margin-top: 10px;
+
+    }
+   .college-wrap{
+    text-wrap: wrap!important;
+      word-wrap: break-word !important;
+    white-space: normal !important;
+   }
+    table, tr, td, th, img, div {
+    page-break-inside: avoid !important;
+  }
+ .row, .col-12, .col-md-7, .col-md-5 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  * {
+    overflow: visible !important;
+  }
+  
+   
+}
