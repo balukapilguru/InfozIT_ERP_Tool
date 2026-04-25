@@ -1,0 +1,233 @@
+.wrapper {
+  display: flex;
+}
+
+.logo_css {
+  /* position: sticky; */
+  /* height: 50%; */
+  max-width: 80%;
+  height: 50px;
+}
+
+.logoinvoice_css {
+  /* position: sticky; */
+  /* height: 50%; */
+  max-width: 70%;
+  height: 75px;
+}
+
+.mini_logo_css {
+  max-width: 50%;
+  display: none;
+  height: 30px;
+}
+
+.mini_logo_css.open {
+  display: inline-block;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+#sidebar {
+  width: 70px;
+  min-width: 70px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background-color: var(--erp-sidebar-color);
+  height: 100vh;
+
+  /* 
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll; 
+  transition: transform 0.3s ease;
+  overflow-y: scroll; 
+  */
+}
+
+.sub_icon,
+.main_icon svg {
+  color: #fff;
+}
+
+#sidebar.expand {
+  width: 260px;
+  min-width: 260px;
+
+}
+
+/* .sidebar_scroll{
+  overflow-y: scroll;
+} */
+
+#sidebar.expand span {
+  transition: all 0.2s linear;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar-nav {
+  padding: 2rem 0;
+  flex: 1 1 auto;
+}
+
+.sidebar-link {
+  padding: 0.625rem 0.8rem;
+  color: var(--erp-indigo-200);
+  display: block;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-item:hover {
+  color: var(--erp-white-color) !important;
+}
+
+.sidebar-link:hover {
+  color: var(--erp-white-color) !important;
+}
+
+.sidebar-link i {
+  font-size: 1.1rem;
+  margin-right: 0.75rem;
+  color: var(--erp-white-color) !important;
+}
+
+.sidebar-link i:hover {
+  /* background-color: rgba(255, 255, 255, 0.075); */
+  /* border-left: 3px solid #3b7ddd; */
+  color: var(--erp-white-color);
+}
+
+.sidebar-item {
+  position: relative;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link .title_show {
+  opacity: 1;
+  visibility: visible;
+  padding: 10px;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .title_show {
+  display: block;
+  max-height: 18em;
+  width: 100%;
+  opacity: 1;
+}
+
+#sidebar:not(.expand) .sidebar-item .title_show {
+  position: absolute;
+  top: 5px;
+  left: 70px;
+
+  background-color: var(--erp-sidebar-color);
+  color: var(--erp-indigo-200);
+  padding: 0;
+  min-width: 15rem;
+  display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item .title_show:hover {
+  color: var(--erp-white-color) !important;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .sidebar-dropdown {
+  display: block;
+}
+
+/* minimise hovering */
+#sidebar:not(.expand) .sidebar-item .sidebar-link .sidebar-dropdown {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  background-color: var(--erp-sky-500);
+  color: var(--erp-white-color);
+  padding: 0;
+  min-width: 15rem;
+  display: none;
+}
+
+.sidebar-link.active {
+  color: white !important;
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  background-color: var(--erp-sidebar-color);
+  color: var(--erp-red-color) !important;
+  padding: 0;
+  min-width: 15rem;
+  display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+  display: block;
+  max-height: 18em;
+  width: 100%;
+  opacity: 1;
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-link .sidebar-dropdown_2 {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  background-color: var(--erp-sky-500);
+  color: var(--erp-white-color);
+  padding: 0;
+  min-width: 15rem;
+  display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown_2 {
+  position: absolute;
+  top: 0px;
+  left: 170px;
+  background-color: var(--erp-sidebar-color);
+
+  color: var(--erp-red-600) !important;
+
+  color: var(--erp-red-color) !important;
+
+  padding: 0;
+  min-width: 15rem;
+  display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown_2 {
+  display: block;
+  max-height: 18em;
+  width: 100%;
+  opacity: 1;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+  border: solid;
+  border-width: 0 0.075rem 0.075rem 0;
+  content: "";
+  display: inline-block;
+  padding: 2.5px;
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  transform: rotate(-135deg);
+  transition: all 0.3s ease-out forwards;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+  transform: rotate(45deg);
+  transition: all 0.3s ease-out forwards;
+}
