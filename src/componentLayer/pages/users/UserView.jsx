@@ -151,7 +151,7 @@ const UserView = () => {
             <div className="card h-auto">
               <div className="rounded-top">
                 <div className="btn_primary text-center rounded-top">
-                  <h6 className="py-2 mb-0">Welcome to InfozIT</h6>
+                  <h6 className="py-2 mb-0">Welcome to Teksversity</h6>
                 </div>
                 <div className="my-2">
 

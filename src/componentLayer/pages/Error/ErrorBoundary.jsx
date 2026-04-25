@@ -10,7 +10,7 @@ import { useAuthContext } from '../../../dataLayer/hooks/useAuthContext';
 
 const ErrorBoundary = () => {
 
-    document.title = "InfozIT | ...oops";
+    document.title = "Teksversity | ...oops";
     const error = useRouteError();
 
 

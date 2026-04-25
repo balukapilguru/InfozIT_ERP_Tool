@@ -18,7 +18,7 @@ import jsPDF from "jspdf";
 import { toast } from "react-toastify";
 import { useAuthContext } from "../../../../dataLayer/hooks/useAuthContext.jsx";
 import mainLogo from "../../../../assets/images/mainlogo/mainlogoteks.png"
-import Infozitwhiteimg from "../../../../assets/images/InfozitwhiteLogo.webp"
+import TeksversityLogo from "../../../../assets/images/TeksversityLogo.webp"
 
 
 export const studentApplicationPrintLoader = async ({ params }) => {
@@ -136,7 +136,7 @@ const StudentApplicationPrint = () => {
                 <div className="row">
                   <div className="col-12 col-md-5 col-lg-5 col-xl-5">
                     <h5 className="black_300 fw-600 fs_18 p-0 ms-3">
-                      InfozIT
+                      Teksversity
                     </h5>
                     {/* <p className="p-0 fs-14 black_300 ms-3">
                       {" "}
@@ -144,7 +144,7 @@ const StudentApplicationPrint = () => {
                     </p> */}
                     <p className="p-0 fs-14 black_300 ">
                       {" "}
-                      <IoMdMail className="fs-16 ms-3" /> info@infozit.com
+                      <IoMdMail className="fs-16 ms-3" /> info@teksversity.com
                     </p>
                     <p className="p-0 fs-14 black_300">
                       <IoCall className="fs-16 ms-3" />
@@ -153,12 +153,12 @@ const StudentApplicationPrint = () => {
                     <p className="p-0 fs-14 black_300">
                       {" "}
                       <PiAtBold className="fs-16 ms-3" />
-                      https://infozit.com
+                      https://teksversity.com
                     </p>
                   </div>
                   <div className="col-12 col-md-6 col-lg-6 col-xl-6 text-center ">
                     <img
-                      src={Infozitwhiteimg}
+                      src={TeksversityLogo}
                       alt="Branch Logo"
                       className=" w-50"
 
@@ -676,7 +676,7 @@ const StudentApplicationPrint = () => {
                       <div className=" ps-4">
                         <p className="fs-14 fw-600 black_300">
                           {" "}
-                          InfozIT is the Learning Management System managed by the Talent Strategy Team which oversees the Learning & Development needs for Kapil Group and its associated companies. Kapil Group may be referred to as ‘the Group’, Talent Strategy team may be referred to as ‘the Team’ and InfozIT may be referred to as ‘the LMS’ below. Users of InfozIT could be the Students of the Group as well as the Channel Partners (aka, Agents or Wealth Advisors). They may jointly be referred to as ‘students’ or ‘Students’.
+                          Teksversity is the Learning Management System managed by the Talent Strategy Team which oversees the Learning & Development needs for Kapil Group and its associated companies. Kapil Group may be referred to as ‘the Group’, Talent Strategy team may be referred to as ‘the Team’ and Teksversity may be referred to as ‘the LMS’ below. Users of Teksversity could be the Students of the Group as well as the Channel Partners (aka, Agents or Wealth Advisors). They may jointly be referred to as ‘students’ or ‘Students’.
                         </p>
                       </div>
                       <div className=" ps-4">
@@ -700,7 +700,7 @@ const StudentApplicationPrint = () => {
 
                         <p className="black_300 fs-14 ms-3">
                           {" "}
-                          1.InfozIT offers courses which are free of
+                          1.Teksversity offers courses which are free of
                           charge to Kapil Group’s Students, and channel partners.
                         </p>
 
@@ -720,7 +720,7 @@ const StudentApplicationPrint = () => {
                         <p className="black_300 fs-14 ms-3">
                           {" "}
                           1. The course material and digital goods provided by the
-                          Talent Strategy within InfozIT is copyrighted and cannot be
+                          Talent Strategy within Teksversity is copyrighted and cannot be
                           reproduced or used for commercial purposes without permission.
                         </p>
 
@@ -838,7 +838,7 @@ const StudentApplicationPrint = () => {
 
                       <div className="ps-4">
                         <h5 className="fs-14 fw-600 black_300">
-                          10. Copying InfozIT Content:
+                          10. Copying Teksversity Content:
                         </h5>
 
                         <p className="black_300 fs-14 ms-3">
@@ -862,7 +862,7 @@ const StudentApplicationPrint = () => {
                           the Team management, is not permitted. In case a student
                           wishes to discontinue the course,
                           they must inform their manager and send an email to
-                          info@infozit.com with their approval.
+                          teksversity@kapilgroup.com with their approval.
                         </p>
                       </div>
 
@@ -907,7 +907,7 @@ const StudentApplicationPrint = () => {
                         </h5>
                         <p className="black_300 fs-14 ms-3">
                           {" "}
-                          1. Although the current courses on InfozIT
+                          1. Although the current courses on Teksversity
                           are offered free of charge,
                           the Team reserves the right to change
                           the Course Fees at any time without prior notice.
@@ -1118,7 +1118,7 @@ const StudentApplicationPrint = () => {
                         <p className="black_300 fs-14 ms-3">
                           {" "}
                           For any questions or concerns about our privacy practices,
-                          please contact us at: Email: info@infozit.com
+                          please contact us at: Email: info@teksversity.com
                         </p>
                       </div>
                       <div className="ps-4">
@@ -1127,7 +1127,7 @@ const StudentApplicationPrint = () => {
                         </h5>
                         <p className="black_300 fs-14 ms-3">
                           {" "}
-                          By signing into InfozIT, you acknowledge that you have read,
+                          By signing into Teksversity, you acknowledge that you have read,
                           understood, and agree to abide by our terms and conditions and privacy policy.
                         </p>
                       </div>

@@ -125,7 +125,7 @@ export const AddMeadiContentAction = async ({ request, params }) => {
     }
 };
 
-const BASE_S3_URL = "-east-1.amazonaws.com/erp/studentManagement/regStudentImgs/";
+const BASE_S3_URL = "https://teksversity.s3.us-east-1.amazonaws.com/erp/studentManagement/regStudentImgs/";
 
 const AddMeadiContent = () => {
     const { id } = useParams();
@@ -399,7 +399,7 @@ const AddMeadiContent = () => {
                                                 title={media.title || "Media File"}
                                                 description={media.description || "N/A"}
                                                 type={media.assetType || "File Type"}
-                                                thumbnail={media.thumbnail ? `-east-1.amazonaws.com/${media.thumbnail}` : ""}
+                                                thumbnail={media.thumbnail ? `https://teksversity.s3.us-east-1.amazonaws.com/${media.thumbnail}` : ""}
                                                 onEdit={() => handleEditMedia(section.curriculumId, media.id)}
                                                 onDelete={() => handleDeleteMedia(section.curriculumId, media.id)}
                                                 onView={() => handleViewMedia({ ...media, curriculumId: section.curriculumId })
@@ -689,7 +689,7 @@ const AddMeadiContent = () => {
         if (!selectedFile || !selectedFile.assetType || !selectedFile.path) {
             return <p className="text-danger text-center">Media not available.</p>;
         }
-        const BASE_S3_URL = "-east-1.amazonaws.com/";
+        const BASE_S3_URL = "https://teksversity.s3.us-east-1.amazonaws.com/";
         const fileKey = selectedFile.path;
         const mediaUrl = `${BASE_S3_URL}${fileKey.startsWith("/") ? fileKey.substring(1) : fileKey}`;
 
@@ -827,7 +827,7 @@ const AddMeadiContent = () => {
                                     {editMediaData.thumbnail && !isThumbnailMedia && (
                                         <div className="mb-2">
                                             <img
-                                                src={editMediaData?.thumbnail?.url ? editMediaData?.thumbnail?.url : `-east-1.amazonaws.com/${editMediaData.thumbnail}`}
+                                                src={editMediaData?.thumbnail?.url ? editMediaData?.thumbnail?.url : `https://teksversity.s3.us-east-1.amazonaws.com/${editMediaData.thumbnail}`}
                                                 alt="thumbnail"
                                                 style={{ height: "80px" }}
                                             />

@@ -1,14 +1,12 @@
 .wrapper {
   display: flex;
 }
-
 .logo_css {
   /* position: sticky; */
   /* height: 50%; */
   max-width: 80%;
   height: 50px;
 }
-
 .logoinvoice_css {
   /* position: sticky; */
   /* height: 50%; */
@@ -19,7 +17,7 @@
 .mini_logo_css {
   max-width: 50%;
   display: none;
-  height: 30px;
+  height: 40px;
 }
 
 .mini_logo_css.open {
@@ -48,18 +46,14 @@
   overflow-y: scroll; 
   */
 }
-
-.sub_icon,
-.main_icon svg {
+.sub_icon, .main_icon svg {
   color: #fff;
 }
-
 #sidebar.expand {
   width: 260px;
   min-width: 260px;
 
 }
-
 /* .sidebar_scroll{
   overflow-y: scroll;
 } */
@@ -82,7 +76,7 @@
 
 .sidebar-link {
   padding: 0.625rem 0.8rem;
-  color: var(--erp-indigo-200);
+  color:var(  --erp-indigo-200);
   display: block;
   font-size: 0.9rem;
   white-space: nowrap;
@@ -94,13 +88,13 @@
 }
 
 .sidebar-link:hover {
-  color: var(--erp-white-color) !important;
+  color:var(--erp-white-color) !important;
 }
 
 .sidebar-link i {
   font-size: 1.1rem;
   margin-right: 0.75rem;
-  color: var(--erp-white-color) !important;
+  color: var(--erp-white-color)!important;
 }
 
 .sidebar-link i:hover {
@@ -112,7 +106,6 @@
 .sidebar-item {
   position: relative;
 }
-
 #sidebar:not(.expand) .sidebar-logo,
 #sidebar:not(.expand) a.sidebar-link .title_show {
   opacity: 1;
@@ -126,7 +119,6 @@
   width: 100%;
   opacity: 1;
 }
-
 #sidebar:not(.expand) .sidebar-item .title_show {
   position: absolute;
   top: 5px;
@@ -138,7 +130,6 @@
   min-width: 15rem;
   display: none;
 }
-
 #sidebar:not(.expand) .sidebar-item .title_show:hover {
   color: var(--erp-white-color) !important;
 }
@@ -146,7 +137,6 @@
 #sidebar:not(.expand) .sidebar-item:hover .sidebar-dropdown {
   display: block;
 }
-
 /* minimise hovering */
 #sidebar:not(.expand) .sidebar-item .sidebar-link .sidebar-dropdown {
   position: absolute;
@@ -158,29 +148,26 @@
   min-width: 15rem;
   display: none;
 }
-
 .sidebar-link.active {
   color: white !important;
 }
-
 #sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
   position: absolute;
   top: 0;
   left: 70px;
   background-color: var(--erp-sidebar-color);
-  color: var(--erp-red-color) !important;
+  color: var( --erp-red-color) !important;
   padding: 0;
   min-width: 15rem;
   display: none;
 }
 
-#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown + .sidebar-dropdown {
   display: block;
   max-height: 18em;
   width: 100%;
   opacity: 1;
 }
-
 #sidebar:not(.expand) .sidebar-item .sidebar-link .sidebar-dropdown_2 {
   position: absolute;
   top: 0;
@@ -198,16 +185,16 @@
   left: 170px;
   background-color: var(--erp-sidebar-color);
 
-  color: var(--erp-red-600) !important;
+  color:var( --erp-red-600)!important;
 
-  color: var(--erp-red-color) !important;
+  color: var( --erp-red-color) !important;
 
   padding: 0;
   min-width: 15rem;
   display: none;
 }
 
-#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown_2 {
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown + .sidebar-dropdown_2 {
   display: block;
   max-height: 18em;
   width: 100%;

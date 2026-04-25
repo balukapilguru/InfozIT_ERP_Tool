@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import Teks_Logo from "../../../assets/images/Infoz-IT.svg";
-import infozitimg from "../../../assets/images/InfozitLogo.webp"
+import kapilVidya from "../../../assets/images/kapilvidya logo.png"
 import "../../../assets/css/Login.css";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useAuthContext } from '../../../dataLayer/hooks/useAuthContext';
@@ -115,7 +115,7 @@ const ResetPassword = () => {
                             <div className="mt-3 card">
                                 <div className="p-4 card-body">
                                     <div className="text-center mt-2">
-                                        <img src={infozitimg} alt="Login page logo" height="40" />
+                                        <img src={kapilVidya} alt="Login page logo" height="40" />
                                         <h5 className="login_welcome_text mt-3">Reset Password</h5>
                                     </div>
                                     <div className="p-2 mt-3">

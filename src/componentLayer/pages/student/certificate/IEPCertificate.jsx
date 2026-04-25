@@ -3,7 +3,7 @@ import Button from "../../../components/button/Button";
 import BackButton from "../../../components/backbutton/BackButton";
 import { MdLocalPrintshop } from "react-icons/md";
 import { useReactToPrint } from "react-to-print";
-import infozitimg from "../../../../assets/images//InfozitLogo.webp";
+import kapilVidya from "../../../../assets/images//kapilvidya logo.png";
 import "../../../../assets/css/IEPCertificate.css";
 import { IoLocationOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
@@ -97,7 +97,7 @@ const IEPCertificate = () => {
                   <div className="row">
                     <div className=" content-width mt-4">
                       <div className=" infoz-img text-end">
-                        <img src={infozitimg} className="w-50 " alt="" />
+                        <img src={kapilVidya} className="w-50 " alt="" />
                       </div>
                       <div className="border-infoz">
                         <div className="border-blue"></div>
@@ -193,7 +193,7 @@ const IEPCertificate = () => {
                             {/* <h6 className="black_300">Bhaskar Saragadam</h6>
                             <h6 className="black_300">Project Manager</h6> */}
                             <h6 className="black_300">
-                              InfozIT (A Unit of Kapil Knowledge Hub
+                              Teksversity (A Unit of Kapil Knowledge Hub
                               Pvt Ltd)
                             </h6>
                           </div>
@@ -205,10 +205,13 @@ const IEPCertificate = () => {
                           Survey 115/1, ISB Rd, Financial District, Gachibowli, Hyderabad, Nanakramguda, Telangana 500032
                         </h6>
                         <div className="d-flex justify-content-around">
-                         
+                          {/* <h6 className="">
+                            <RiGlobalLine className="me-1" />
+                            www.teksversity.com
+                          </h6> */}
                           <h6 className="">
                             <CiMail className="me-1" />
-                            info@infozit.com
+                            info@teksversity.com
                           </h6>
                           <h6 className="">
                             <IoIosCall className="me-1" />

@@ -18,10 +18,9 @@ import icon1 from "../../../../assets/images/certificate_images/telephone-call.s
 import icon2 from "../../../../assets/images/certificate_images/envelope (3).svg";
 import { useParams } from "react-router-dom";
 import { ERPApi } from "../../../../serviceLayer/interceptor.jsx";
-import infozitwhiteimg from "../../../../assets/images/infozitwhiteLogo.webp";
+import kapilVidya from "../../../../assets/images/TeksversityLogo.webp";
 import { useLoaderData } from "react-router-dom";
-import infozitLogoimg from "../../../../assets/images/InfozitLogo.webp";
- 
+
 export const intrernshipCertificateLoader = async ({ params }) => {
 
   try {
@@ -55,7 +54,7 @@ const IntrernshipCertificate = () => {
 const [imagesLoaded, setImagesLoaded] = useState(false);
 
   // Preload all certificate images
-  const images = [bgimg, badge, infozitwhiteimg, img1, img5, sign, icon1, icon2, backgoundimg];
+  const images = [bgimg, badge, kapilVidya, img1, img5, sign, icon1, icon2, backgoundimg];
 
   useEffect(() => {
     let loadedCount = 0;
@@ -150,7 +149,7 @@ const [imagesLoaded, setImagesLoaded] = useState(false);
                 <div className="test position-relative">
                   <img src={bgimg} alt="certificate" className="" />
                   <div className="logos position-absolute">
-                    <img src={infozitLogoimg} className="infoimg" alt="" />
+                    <img src={kapilVidya} className="infoimg" alt="" />
                   </div>
                   <div>
                     <header className="headers d-flex flex-row justify-content-center align-items-start mt-5 position-absolute">
@@ -180,7 +179,7 @@ const [imagesLoaded, setImagesLoaded] = useState(false);
                   <div className="inter-info">
                     <p className="position-absolute completion-info">
                       For his/her successful completion of the internship
-                      program at <span>InfozIT </span>as the role{" "}
+                      program at <span>Teksversity </span>as the role{" "}
                       <span> {certificatePrint?.courses} Intern</span> for the
                       duration of{" "}
                       <span>
@@ -265,7 +264,7 @@ const [imagesLoaded, setImagesLoaded] = useState(false);
                           <span className="iconImg1 ms-4">
                             <img src={icon2} alt="" />
                           </span>
-                          <span className="email-info">info@infozit.com</span>
+                          <span className="email-info">info@teksversity.com</span>
                         </h6>
                         <h6>
                           <span className="iconImg ms-4">
